@@ -1,0 +1,64 @@
+.logo
+{
+    text-align: center;
+    margin-right: 100px;
+}
+.ndbaophai
+{
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:350px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.baophai
+{
+    margin-top: 30px;
+}
+.abaophai
+{
+    width: 60px;height: 60px;float: left
+}
+.hinhdau
+{
+    width: 625px;
+    height: 340px;
+}
+.ndbaotrai1
+{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:300;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.ndbaotrai2
+{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.baotrai2
+{
+    float:right;
+}
+.baotrai3
+{
+    padding-top: 30px;
+    float: right;
+}
+.ndbaotrai3
+{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:300;
+    text-decoration: none;
+    margin-right: 20px;
+}
