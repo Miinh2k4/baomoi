@@ -1,11 +1,16 @@
 .logo
 {
+    margin-top: 10px;
     text-align: center;
     margin-right: 100px;
+    width: 40%;
+}
+.menu
+{
+    font-weight: bold;
 }
 .ndbaophai
 {
-    padding-left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:black;
     font-weight:350px;
@@ -14,26 +19,43 @@
 }
 .baophai
 {
-    margin-top: 30px;
 }
 .abaophai
 {
-    width: 60px;height: 60px;float: left
+    width: 60px;height: 60px;float: left;margin-right: 10px;
 }
 .hinhdau
 {
-    width: 625px;
-    height: 340px;
+    width: 100%;
 }
 .ndbaotrai1
 {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:black;
-    font-weight:300;
+    font-weight:7000;
     text-decoration: none;
     margin-right: 20px;
     
+}
+.trai a
+{
+    text-decoration: none;
+}
+trai img
+{
+    transition: all 0.3s ease-in-out;
+}
+trai li :hover img
+{
+    transform: scale(1.1);
+}
+.phai a
+{
+    text-decoration: none;
+}
+{
+
 }
 .ndbaotrai2
 {
@@ -45,8 +67,12 @@
     margin-right: 20px;
 }
 .baotrai2
+{   
+    float:left;
+}
+.baotrai3>a>img
 {
-    float:right;
+    margin-right: 10px;
 }
 .baotrai3
 {
@@ -62,3 +88,76 @@
     text-decoration: none;
     margin-right: 20px;
 }
+.ctri
+{
+
+    padding-top: 20px;
+}
+
+.ctri>p :hover
+{
+    color: purple;
+    text-decoration: none;
+}
+.ctri a
+{
+    font-size: 20px;
+    color: red;
+}
+.baoctri
+{
+    margin-bottom: 30px;
+}
+.ndbaoctri
+{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    font-weight:300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.baoctri a
+{
+    text-decoration: none;
+    
+}
+.baoctri img
+{
+    margin-right: 10px;
+}
+.tthao
+{
+
+    padding-top: 20px;
+}
+
+.tthao>p :hover
+{
+    color: purple;
+    text-decoration: none;
+}
+.tthao a
+{
+    font-size: 30px;
+    color: red;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
