@@ -19,17 +19,13 @@
           <a href=""><img src="hinhbao/logo2.png" alt="" class="logo" style=""></a>
         </div>
         <div class="col-lg-8">
-          <nav style="float: right;" class="navbar navbar-light bg-light">
+          <nav style="float: right;margin-top: 10px;cursor: pointer;" class="navbar navbar">
             <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
-              <a style="margin-left: 10px;" class="btn btn-sm btn-outline-secondary" href="#">Đăng nhập</a>  
+              <i class="fa-solid fa-magnifying-glass" style=""></i>
+              <a style="margin-left: 15px;" class="btn btn-sm btn-outline-secondary" href="#">Đăng nhập</a>  
             </form>
           </nav>
         </div>
-      </div>
-      <div class="container">
-        <a href=""><img src="hinhbao/banner.jpg" alt="" style="width: 100%;"></a>
       </div>
       <div class="nav-scroller py-1 mb-2 menu">
         <nav class="nav d-flex justify-content-between">
@@ -42,11 +38,34 @@
           <a class="p-2 text-muted" href="#">Giải trí</a>
           <a class="p-2 text-muted" href="#">Văn hoá</a>
           <a class="p-2 text-muted" href="#">Đời sống</a>
-          <a class="p-2 text-muted" href="#">Sức khoer</a>
+          <a class="p-2 text-muted" href="#">Sức khoẻ</a>
           <a class="p-2 text-muted" href="#">Pháp luật</a>
         </nav>
       </div>
     </div>
+    <div class="latest-updates">
+      <div class="container">
+        <div class="justify-content-between">
+           <div class="slide-section tnong">
+            <h5 style="text-align: center;color: white;background-color: red;">Tin nóng</h5>
+             <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" class="tnong1">
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+               <a href="#"> <i class="fa-solid fa-circle"></i> Chuyện lạ: Chung cư có 500 hộ dân vào ở vẫn chưa được chấp thuận đầu tư </a>
+
+             </marquee>
+           </div>
+        </div>
+        
+      </div>
+   </div>
+   
     <div class="container">
       <div class="row">
         <!-- traiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii -->
@@ -182,7 +201,8 @@
 
     </div>
     <!-- backtotoppppppppppppppppp -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top" <i class="fa-solid fa-arrow-up"></i></button>
+    <button onclick="smoothScrollToTop()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up " style=""></i></button>
+
       
       <script>
       // Get the button
@@ -200,11 +220,70 @@
       }
       
       // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+function smoothScrollToTop() {
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 8); // Thay đổi số 8 ở đây để điều chỉnh tốc độ cuộn
+    }
+  };
+  scrollToTop();
+}
       </script>
       <!-- backtotoppppppppppppppppp -->
+        <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">Giáo dục</a></li>
+              <li><a href="">Giải trí</a></li>
+              <li><a href="">Văn hoá</a></li>
+              <li><a href="">Đời sống</a></li>
+              <li><a href="">Sức khoẻ</a></li>
+              <li><a href="">Pháp luật</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Contribute</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#">NguyenThaiAnhMinh</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
   </body>
 </html>
