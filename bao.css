@@ -1,3 +1,7 @@
+.container >a
+{
+  background-color: red;
+}
 .logo
 {
     margin-top: 10px;
@@ -65,9 +69,11 @@ trai li :hover img
     font-weight:300;
     text-decoration: none;
     margin-right: 20px;
+
 }
 .baotrai2
 {   
+  text-decoration: none;
     float:left;
 }
 .baotrai3>a>img
@@ -415,4 +421,78 @@ overflow-y: auto;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.navbar1
+{
+  margin-top: 30px;
+}
+@media (min-width:992px)
+{
+  .menu2
+  {
+    display: none;
+  }
+  .imgslb
+  {
+    width: 1100px;
+    height: 500px;
+  }
+}
+@media (max-width:992px){
+  .logo{
+    width: 20%;
+  }
+  .navbar1 {
+    margin-top: -59px;
+    
+  }
+  .menu .menu1{
+    font-size: 11px;
+  }
+  .menu2
+  {
+    display: none;
+  }
+  .baotrai2 img
+  {
+    float: left;
+    padding-bottom: 15px;
+  }
+  .ndbaotrai2{  
+    font-size: 21px;
+  }
+  .baotrai2 img{
+    padding-right: 10px;
+  }
+  .slidebao img
+{
+  width: 700px;
+  height: 300px;
+}
+}
+@media (max-width:768px){
+  .logo{
+    width: 18%;
+  }
+  .navbar1 {
+    margin-top: -39px;
+    
+  }
+  .menu{
+    display: none;
+  }
+  .menu2
+  {
+    display: block;
+
+  }
+  .imgslb
+  {
+    width: 552px;
+    height: 331px;
+  }
+  .capslb>h4
+  {
+    font-size: 15px;
+  }
 }
