@@ -496,3 +496,10 @@ overflow-y: auto;
     font-size: 15px;
   }
 }
+.header
+{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+}

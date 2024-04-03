@@ -89,3 +89,11 @@ function getCurrentTime() {
     // Định dạng giờ và phút thành chuỗi "HH:MM"
     return (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) { // Change 50 to the desired scroll position
+    navbar.classList.add('fixed-navbar');
+  } else {
+    navbar.classList.remove('fixed-navbar');
+  }
+});
