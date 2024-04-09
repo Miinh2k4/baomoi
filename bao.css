@@ -257,14 +257,14 @@ trai li :hover img
 {
   margin:0
 }
-@media (max-width:991px)
+@media (max-width:992px)
 {
   .site-footer [class^=col-]
   {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
+@media (max-width:430px)
 {
   .site-footer
   {
@@ -337,7 +337,7 @@ trai li :hover img
 {
   background-color:#ea4c89
 }
-@media (max-width:767px)
+@media (max-width:430px)
 {
   .social-icons li.title
   {
@@ -470,7 +470,7 @@ overflow-y: auto;
   height: 300px;
 }
 }
-@media (max-width:768px){
+@media (max-width:430px){
   .logo{
     width: 18%;
   }
@@ -494,6 +494,14 @@ overflow-y: auto;
   .capslb>h4
   {
     font-size: 15px;
+  }
+  .tthao>p>a
+  {
+    font-size: 27px;
+  }
+  .ctri>p>a
+  {
+    font-size: 27px;
   }
 }
 .header
